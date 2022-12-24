@@ -27,16 +27,16 @@ function checkLogin() {
             );
             if (user) {
                 if (user.workplace == 'Agent') {
-                    window.location.href = "\Home Page\Agent\agent.html";
+                    window.open("/Home/Agent/agent.html", "_self");
                 }
                 if (user.workplace == 'Factory') {
-                    window.location.href = "\Home Page\Factory\factory.html";
+                    window.open("/Home/Factory/factory.html", "_self");
                 }
                 if (user.workplace == 'Warranty') {
-                    window.location.href = "\Home Page\Factory\warranty.html";
+                    window.open("/Home/Warranty/warranty.html", "_self");
                 }
                 if (user.role == 'Manager') {
-                    window.location.href = "\Home Page\Manager\warranty.html";
+                    window.open("/Home/Manager/manager.html", "_self");
                 }
             } else {
                 alert("Login failed");
