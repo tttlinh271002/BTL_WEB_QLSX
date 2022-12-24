@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- === Coding by CodingLab | www.codinglabweb.com === -->
 <html lang="en">
 
 <head>
@@ -25,13 +24,19 @@
 
                 <form action="#">
                     <div class="input-field">
-                        <input type="text" placeholder="Username" required>
+                        <input type="text" placeholder="Username" id="loginuser" required>
                         <i class="uil uil-envelope icon"></i>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
                     </div>
                     <div class="input-field">
-                        <input type="password" class="password" placeholder="Password" required>
+                        <input type="password" class="password" placeholder="Password" id="loginpass" required>
                         <i class="uil uil-lock icon"></i>
                         <i class="uil uil-eye-slash showHidePw"></i>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
                     </div>
 
                     <div class="checkbox-text">
@@ -43,8 +48,8 @@
                         <a href="#" class="text">Forgot password?</a>
                     </div>
 
-                    <div class="input-field button">
-                        <button>Login</button>
+                    <div class="input-field button" id="form-login">
+                        <button type="submit" class="login">Login</button>
                     </div>
                 </form>
 
@@ -67,7 +72,7 @@
                         <small>Error message</small>
                     </div>
                     <div class="input-field">
-                        <input type="text" placeholder="Enter your fullname" id="name" required>
+                        <input type="text" placeholder="Enter your fullname" id="fullname" required>
                         <i class="fas fa-check-circle"></i>
                         <i class="fas fa-exclamation-circle"></i>
                         <small>Error message</small>
@@ -99,29 +104,29 @@
                     </div>
                     <div class="checkbox-choose">
                         Role:
-                        <input type="radio" name="role" value="adm" id="adm"> Manager
-                        <input type="radio" name="role" value="mem" id="mem"> Branch
+                        <input type="radio" name="role" value="Manager" id="adm"> Manager
+                        <input type="radio" name="role" value="Branch" id="mem"> Branch
                     </div>
                     <div class="select-box">
                         <div class="options-container">
                             <div class="option">
-                                <input type="radio" class="radio" id="automobiles" name="category" />
-                                <label for="automobiles">Automobiles</label>
+                                <input type="radio" class="radio" id="factory" name="category" value="Factory" />
+                                <label for="factory">Factory</label>
                             </div>
 
                             <div class="option">
-                                <input type="radio" class="radio" id="film" name="category" />
-                                <label for="film">Film & Animation</label>
+                                <input type="radio" class="radio" id="agent" name="category" value="Agent" />
+                                <label for="agent">Agent</label>
                             </div>
 
                             <div class="option">
-                                <input type="radio" class="radio" id="science" name="category" />
-                                <label for="science">Science & Technology</label>
+                                <input type="radio" class="radio" id="warranty" name="category" value="Warranty" />
+                                <label for="warranty">Warranty</label>
                             </div>
                         </div>
                     </div>
-                    <div class="selected">
-                        Select Video Category
+                    <div class="selected" id="selected">
+                        Select Place Work
                     </div>
                     <div class="checkbox-text">
                         <div class="checkbox-content">
@@ -131,7 +136,7 @@
                     </div>
 
                     <div class="input-field button" id="form-input">
-                        <button>Signup</button>
+                        <button type="submit" class="signup">Signup</button>
                     </div>
                 </form>
 
@@ -146,6 +151,7 @@
 
     <script src="script.js"></script>
     <script src="valid.js"></script>
+    <script src="checkLogin.js"></script>
 </body>
 
 </html>
