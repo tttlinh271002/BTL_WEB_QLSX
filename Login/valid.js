@@ -7,18 +7,7 @@ const phone = document.getElementById('phone');
 const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
 const role = document.getElementsByName('role');
-const plW = document.getElementsByName('category');
-const err = document.getElementById('selected');
-
-function getPlW() {
-    var plWValue = '';
-    for (var i = 0; i < plW.length; i++) {
-        if (plW[i].active == true) {
-            plWValue = plW[i].value;
-        }
-    }
-    return plWValue;
-}
+const plW = document.querySelector('select');
 
 function getRole() {
     var roleValue = '';
@@ -35,12 +24,12 @@ btnSignUp.addEventListener("click", e => {
     checkInputs();
     //console.log(checkUserExist(username));
     // console.log(getRole());
-    console.log(getPlW());
+    console.log(plW.value);
 });
 
 function checkInputs() {
     // trim to remove the whitespaces
-    const plWValue = getPlW();
+    const plWValue = plW.value;
     const usernameValue = username.value.trim();
     const emailValue = email.value.trim();
     const passwordValue = password.value.trim();
