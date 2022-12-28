@@ -50,6 +50,22 @@ body {
     transition: opacity 0.09s ease;
 }
 
+.container.active .verify {
+    margin-left: -50%;
+    opacity: 0;
+    transition: margin-left 0.18s ease, opacity 0.15s ease;
+}
+
+.container.active .reset {
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+
+.container .reset {
+    opacity: 0;
+    transition: opacity 0.09s ease;
+}
+
 .container.active .signup {
     opacity: 1;
     transition: opacity 0.2s ease;
@@ -59,13 +75,13 @@ body {
     height: 600px;
 }
 
-.container .form .title {
+.title {
     position: relative;
     font-size: 27px;
     font-weight: 600;
 }
 
-.form .title::before {
+.title::before {
     content: '';
     position: absolute;
     left: 0;
@@ -77,6 +93,13 @@ body {
 }
 
 .form .input-field {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.input-field {
     position: relative;
     height: 50px;
     width: 100%;
@@ -246,4 +269,16 @@ button {
     background-color: #020713;
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
+}
+
+.f {
+    display: flex;
+}
+
+.code {
+    max-width: 100px;
+}
+
+#form-code {
+    width: 30%;
 }

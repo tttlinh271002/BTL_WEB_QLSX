@@ -13,6 +13,8 @@
 
     <div class="container">
         <div class="forms">
+
+            <!-- Login Form  -->
             <div class="form login">
                 <span class="title">Login</span>
 
@@ -32,7 +34,6 @@
                         <i class="fas fa-exclamation-circle"></i>
                         <small>Error message</small>
                     </div>
-
                     <div class="checkbox-text">
                         <div class="checkbox-content">
                             <input type="checkbox" id="logCheck">
@@ -53,102 +54,10 @@
                     </span>
                 </div>
             </div>
-
-            <!-- Registration Form -->
-            <div id="form signup" class="form signup">
-                <span class="title">Registration</span>
-
-                <form action="#">
-                    <div class="input-field">
-                        <input type="text" placeholder="Enter your username" id="username" required>
-                        <i class="fas fa-check-circle"></i>
-                        <i class="fas fa-exclamation-circle"></i>
-                        <small>Error message</small>
-                    </div>
-                    <div class="input-field">
-                        <input type="text" placeholder="Enter your fullname" id="fullname" required>
-                        <i class="fas fa-check-circle"></i>
-                        <i class="fas fa-exclamation-circle"></i>
-                        <small>Error message</small>
-                    </div>
-                    <div class="input-field">
-                        <input type="text" placeholder="Enter your phone" id="phone" required>
-                        <i class="fas fa-check-circle"></i>
-                        <i class="fas fa-exclamation-circle"></i>
-                        <small>Error message</small>
-                    </div>
-                    <div class="input-field">
-                        <input type="text" placeholder="Enter your email" id="email" equired>
-                        <i class="fas fa-check-circle"></i>
-                        <i class="fas fa-exclamation-circle"></i>
-                        <small>Error message</small>
-                    </div>
-                    <div class="input-field">
-                        <input type="password" class="password" placeholder="Create a password" id="password" required>
-
-                        <i class="fas fa-check-circle"></i>
-                        <i class="fas fa-exclamation-circle"></i>
-                        <small>Error message</small>
-                    </div>
-                    <div class="input-field">
-                        <input type="password" class="password" placeholder="Confirm a password" id="password2" required>
-                        <i class="fas fa-check-circle"></i>
-                        <i class="fas fa-exclamation-circle"></i>
-                        <small>Error message</small>
-                    </div>
-                    <div class="checkbox-choose">
-                        Role:
-                        <input type="radio" name="role" value="Manager" id="adm"> Manager
-                        <input type="radio" name="role" value="Branch" id="mem"> Branch
-                    </div>
-                    <div class="select-box">
-                        <select class="select">
-                            <option value="">Select your workplace</option>
-                            <option value="Factory"><label>Factory</label></option>
-                            <option value="Agent"><label>Agent</label></option>
-                            <option value="Warranty"><label>Warranty</label></option>
-                        </select>
-                        <!-- <div class="options-container" id="workplace">
-                            <div class="option">
-                                <option value="Factory"><label>Factory</label></option>
-
-                            </div>
-
-                            <div class="option">
-                                <option value="Agent"><label>Agent</label></option>
-
-                            </div>
-
-                            <div class="option">
-                                <option value="Warranty"><label>Warranty</label></option>
-
-                            </div>
-                        </div> -->
-                    </div>
-
-                    <div class="checkbox-text">
-                        <div class="checkbox-content">
-                            <input type="checkbox" id="termCon">
-                            <label for="termCon" class="text">I accepted all terms and conditions</label>
-                        </div>
-                    </div>
-
-                    <div class="input-field button" id="form-input">
-                        <button type="submit" class="signup">Signup</button>
-                    </div>
-                </form>
-
-                <div class="login-signup">
-                    <span class="text">Already have an account?
-                        <a href="#" class="text login-link">Login Now</a>
-                    </span>
-                </div>
-            </div>
         </div>
     </div>
 
     <script src="script.js"></script>
-    <script src="valid.js"></script>
     <script src="checkLogin.js"></script>
 </body>
 

@@ -1,10 +1,13 @@
 const username_login = document.getElementById('loginuser');
 const password_login = document.getElementById('loginpass');
 const btnLogin = document.getElementById('form-login');
+const error_form = document.getElementById('error');
 btnLogin.addEventListener("click", e => {
     e.preventDefault();
     checkLogin();
+    console.log(getUsername());
 })
+
 
 function checkLogin() {
     const usernameValue = username_login.value.trim();
@@ -39,7 +42,7 @@ function checkLogin() {
                     window.open("/Home/Manager/manager.html", "_self");
                 }
             } else {
-                alert("Login failed");
+                setErrorFor(password_login, 'Username or password invalid');
             }
         });
     }

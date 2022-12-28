@@ -1,73 +1,72 @@
 {
-  "user": [
-    {
-      "id": 1,
-      "username": "admin",
-      "password": "admin",
-      "fname": "Hoang",
-      "email": "vn@gmail.com",
-      "phone": "0987654321",
-      "role": "Branch",
-      "workplace": "Agent"
-    },
-    {
-      "username": "huy",
-      "password": "123",
-      "fname": "Hoàng Tú Tài",
-      "email": "phuongthaohoang597@gmail.com",
-      "phone": "0931385731",
-      "role": "Branch",
-      "workplace": "Factory",
-      "id": 2
-    },
-    {
-      "username": "rau",
-      "password": "123",
-      "fname": "Hoàng Tú Tài",
-      "email": "phuongthaohoang597@gmail.com",
-      "phone": "0931385731",
-      "role": "Manager",
-      "id": 3
-    },
-    {
-      "username": "dad",
-      "password": "123",
-      "fname": "BNHài",
-      "email": "ferari03013@gmail.com",
-      "phone": "0931385731",
-      "role": "Branch",
-      "workplace": "Agent",
-      "id": 4
-    },
-    {
-      "username": "cacl",
-      "password": "123",
-      "fname": "Dương HA",
-      "email": "ferari03013@gmail.com",
-      "phone": "0931385731",
-      "role": "Branch",
-      "workplace": "",
-      "id": 5
-    },
-    {
-      "username": "miun",
-      "password": "123",
-      "fname": "NHG",
-      "email": "mt@gmail.com",
-      "phone": "0987643213",
-      "role": "Branch",
-      "workplace": "Agent",
-      "id": 6
-    },
-    {
-      "username": "ha",
-      "password": "bnm",
-      "fname": "NIH",
-      "email": "nbv@vnu.edu",
-      "phone": "0382341134",
-      "role": "Branch",
-      "workplace": "Warranty",
-      "id": 7
-    }
-  ]
+    "user": [{
+            "id": 1,
+            "username": "admin",
+            "password": "admin",
+            "fname": "Hoang",
+            "email": "vn@gmail.com",
+            "phone": "0987654321",
+            "role": "Branch",
+            "workplace": "Agent"
+        },
+        {
+            "username": "huy",
+            "password": "123",
+            "fname": "Hoàng Tú Tài",
+            "email": "phuongthaohoang597@gmail.com",
+            "phone": "0931385731",
+            "role": "Branch",
+            "workplace": "Factory",
+            "id": 2
+        },
+        {
+            "username": "rau",
+            "password": "123",
+            "fname": "Hoàng Tú Tài",
+            "email": "ada@gmail.com",
+            "phone": "0931385731",
+            "role": "Manager",
+            "id": 3
+        },
+        {
+            "username": "dad",
+            "password": "123",
+            "fname": "BNHài",
+            "email": "ferari03013@gmail.com",
+            "phone": "0931385731",
+            "role": "Branch",
+            "workplace": "Agent",
+            "id": 4
+        },
+        {
+            "username": "cacl",
+            "password": "123",
+            "fname": "Dương HA",
+            "email": "ferari03013@gmail.com",
+            "phone": "0931385731",
+            "role": "Branch",
+            "workplace": "Factory",
+            "id": 5
+        },
+        {
+            "username": "miun",
+            "password": "123",
+            "fname": "NHG",
+            "email": "mt@gmail.com",
+            "phone": "0987643213",
+            "role": "Branch",
+            "workplace": "Agent",
+            "id": 6
+        },
+        {
+            "username": "ha",
+            "password": "bnm",
+            "fname": "NIH",
+            "email": "nbv@vnu.edu",
+            "phone": "0382341134",
+            "role": "Branch",
+            "workplace": "Warranty",
+            "id": 7
+        }
+    ]
 }
