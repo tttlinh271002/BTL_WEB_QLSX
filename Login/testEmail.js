@@ -1,4 +1,4 @@
-import Mailjet from 'node-mailjet'
+import Mailjet from 'node-mailjet';
 var API_key = 'd3d88137bd5ddfbc53f9170d4c22aa81';
 var sc_key = '332870c01eb409e0dcec3f08696ec852';
 
@@ -31,4 +31,4 @@ function sendEmail() {
             console.log(err.statusCode)
         })
 }
-export { sendEmail };
+module.export = { sendEmail: sendEmail }

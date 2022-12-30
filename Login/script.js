@@ -1,3 +1,4 @@
+let apiUser = "http://localhost:3000/user";
 const container = document.querySelector(".container"),
     pwShowHide = document.querySelectorAll(".showHidePw"),
     pwFields = document.querySelectorAll(".password"),
@@ -26,9 +27,3 @@ const container = document.querySelector(".container"),
 // })
 
 // js code to appear signup and login form
-signUp.addEventListener("click", () => {
-    container.classList.add("active");
-});
-login.addEventListener("click", () => {
-    container.classList.remove("active");
-});

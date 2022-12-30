@@ -50,7 +50,7 @@ function verifying() {
             check = true;
             if (check) {
                 random_otp = getRandom().toString();
-                sendEmail();
+                // sendEmail();
             }
         } else {
             if (emailValue === '') {
@@ -101,8 +101,9 @@ function checkRepass() {
             );
             if (user) {
                 user.password = new_passValue;
-                fetch(apiUser, {
-                        method: "POST",
+                var id = user.id;
+                fetch(apiUser + '/' + id, {
+                        method: "PUT",
                         headers: {
                             "Content-Type": "application/json",
                         },

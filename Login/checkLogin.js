@@ -8,6 +8,11 @@ btnLogin.addEventListener("click", e => {
     console.log(getUsername());
 })
 
+const getUser = async() => {
+    const response = await fetch(apiUser);
+    const data = await response.json();
+    return data;
+};
 
 function checkLogin() {
     const usernameValue = username_login.value.trim();
