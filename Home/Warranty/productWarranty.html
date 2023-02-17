@@ -14,6 +14,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../Agent/css/sidebar.css">
+    <link rel="stylesheet" href="./css/productWarranty.css">
 </head>
 
 <body>
@@ -78,7 +79,65 @@
         <!-- Main -->
         <main class="main-container">
             <div class="main-title">
-                <p class="font-weight-bold">DASHBOARD</p>
+                <p class="font-weight-bold">SẢN PHẨM BẢO HÀNH</p>
+            </div>
+
+            <div class="form">
+                <div class="form-group">
+                    <label for="codeProduct">Mã sản phẩm: </label>
+                    <input id="codeProduct" type="text" class="form-input">
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="codeWarranty">TT Bảo hành: </label>
+                    <input id="codeWarranty" type="text" class="form-input">
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="typewarr">Loại BH: </label>
+                    <input id="typewarr" type="text" class="form-input">
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="status">Trạng thái: </label>
+                    <input id="status" type="text" class="form-input">
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="codefactory">Cơ sở sản xuất: </label>
+                    <input id="codefactory" type="text" class="form-input">
+                    <div class="error-message"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="codeagent">Đại lý: </label>
+                    <input id="codeagent" type="text" class="form-input">
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <input id="index" type="hidden">
+                </div>
+            </div>
+
+            <button id="save" class="savebtn" onclick="addNew()">Add New</button>
+            <button id="update" class="updatebtn" onclick="changeStudent()" style="display: none;">Update</button>
+
+            <div class="bang">
+                <label for="search"></label><input type="text" id="search" class="searchbtn" placeholder="search" oninput="searchUser()" />
+                <table border="1" cellspacing="0" cellpadding="10" id="tableContent" class="table">
+                    <tr>
+                        <th>STT</th>
+                        <th>Mã Đại lý</th>
+                        <th>Tên Đại lý</th>
+                        <th>Mã sản phẩm</th>
+                        <th>Hãng</th>
+                        <th>Phiên bản</th>
+                        <th>Màu sắc</th>
+                        <th>Giá</th>
+                        <th>Action</th>
+                    </tr>
+                </table>
+                <ul id="pagination"></ul>
             </div>
 
             <!-- enddd -->
@@ -90,6 +149,7 @@
     <!-- Scripts -->
     <!-- Custom JS -->
     <script src="../Agent/js/sidebar.js"></script>
+    <script src="./js/productWarranty.js"></script>
 </body>
 
 </html>

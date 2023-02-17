@@ -14,6 +14,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../Agent/css/sidebar.css">
+    <link rel="stylesheet" href="./css/agent.css">
 </head>
 
 <body>
@@ -77,6 +78,11 @@
                         <span class="material-icons-outlined">groups</span> Nhân viên
                     </a>
                 </li>
+                <li class="sidebar-list-item">
+                    <a href="/Login/index.html">
+                        <span class="material-icons-outlined"></span> Log out
+                    </a>
+                </li>
 
             </ul>
         </aside>
@@ -84,19 +90,58 @@
 
         <!-- Main -->
         <main class="main-container">
+
             <div class="main-title">
-                <p class="font-weight-bold">DASHBOARD</p>
+                <p class="font-weight-bold">ĐẠI LÝ PHÂN PHỐI</p>
             </div>
 
-            <!-- enddd -->
+            <div class="form">
+                <div class="form-group">
+                    <label for="codeAgent">Mã Đại Lý: </label>
+                    <input id="codeAgent" type="text" class="form-input">
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="name">Tên Đại Lý: </label>
+                    <input id="name" type="text" class="form-input">
+                    <div class="error-message"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Địa chỉ Đại Lý: </label>
+                    <input id="address" type="text" class="form-input">
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <input id="index" type="hidden">
+                </div>
+            </div>
+
+            <button id="save" class="savebtn" onclick="addNew()">Add New</button>
+            <button id="update" class="updatebtn" onclick="changeStudent()" style="display: none;">Update</button>
+
+            <div class="bang">
+                <label for="search"></label><input type="text" id="search" placeholder="search" class="searchbtn" oninput="searchUser()" />
+                <table border="1" cellspacing="0" cellpadding="10" id="tableContent" class="table">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Action</th>
+                    </tr>
+                </table>
+                <ul id="pagination"></ul>
+            </div>
+
+            <!-- end -->
         </main>
-        <!-- End Main -->
 
     </div>
 
     <!-- Scripts -->
     <!-- Custom JS -->
     <script src="../Agent/js/sidebar.js"></script>
+    <script src="./js/agent.js"></script>
 </body>
 
 </html>

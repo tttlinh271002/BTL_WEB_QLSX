@@ -14,6 +14,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/sidebar.css">
+    <link rel="stylesheet" href="./css/customer.css">
 </head>
 
 <body>
@@ -89,7 +90,54 @@
         <!-- Main -->
         <main class="main-container">
             <div class="main-title">
-                <p class="font-weight-bold">DASHBOARD</p>
+                <p class="font-weight-bold">THÔNG TIN KHÁCH HÀNG</p>
+            </div>
+
+            <div class="form">
+                <div class="form-group">
+                    <label for="id">Mã khách hàng: </label>
+                    <input id="id" type="text" class="form-input">
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="nameCustomer">Tên khách hàng: </label>
+                    <input id="nameCustomer" type="text" class="form-input">
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Số điện thoại: </label>
+                    <input id="phone" type="text" class="form-input">
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="cmnd">Căn cước công dân: </label>
+                    <input id="cmnd" type="text" class="form-input">
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address: </label>
+                    <input id="address" type="text" class="form-input">
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <input id="index" type="hidden">
+                </div>
+            </div>
+
+            <button id="save" class="savebtn" onclick="addNew()">Add New</button>
+            <button id="update" class="updatebtn" onclick="changeStudent()" style="display: none;">Update</button>
+
+            <div class="bang">
+                <label for="search"></label><input type="text" id="search" placeholder="search" class="searchbtn" oninput="searchUser()" />
+                <table border="1" cellspacing="0" cellpadding="10" id="tableContent" class="table">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Action</th>
+                    </tr>
+                </table>
+                <ul id="pagination"></ul>
             </div>
 
             <!-- enddd -->
@@ -101,6 +149,7 @@
     <!-- Scripts -->
     <!-- Custom JS -->
     <script src="./js/sidebar.js"></script>
+    <script src="./js/customer.js"></script>
 </body>
 
 </html>

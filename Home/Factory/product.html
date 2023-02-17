@@ -14,6 +14,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../Agent/css/sidebar.css">
+    <link rel="stylesheet" href="../Agent/css/product.css">
 </head>
 
 <body>
@@ -83,8 +84,74 @@
         <!-- Main -->
         <main class="main-container">
             <div class="main-title">
-                <p class="font-weight-bold">DASHBOARD</p>
+                <p class="font-weight-bold">THÔNG TIN DÒNG SẢN PHẨM</p>
             </div>
+
+            <div class="form">
+                <div class="form-group">
+                    <label for="codeProduct">Mã dòng SP: </label>
+                    <input id="codeProduct" type="text" class="form-input">
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="loai">Loại xe: </label>
+                    <input id="loai" type="text" class="form-input">
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="brand">Hãng: </label>
+                    <input id="brand" type="text" class="form-input">
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="version">Phiên bản: </label>
+                    <input id="version" type="text" class="form-input">
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="trongluong">Trọng lượng(kg): </label>
+                    <input id="trongluong" type="text" class="form-input">
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="size">DàixRộngxCao(mm):</label>
+                    <input id="size" type="text" class="form-input">
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="dungtich">Dung tích xăng(L): </label>
+                    <input id="dungtich" type="text" class="form-input">
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="timebh">Thời gian bảo hành: </label>
+                    <input id="timebh" type="text" class="form-input">
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="price">Giá: </label>
+                    <input id="price" type="text" class="form-input">
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <input id="index" type="hidden">
+                </div>
+            </div>
+            <button id="save" class="savebtn" onclick="addNew()">Add New</button>
+            <button id="update" class="updatebtn" onclick="changeStudent()" style="display: none;">Update</button>
+            <div class="bang">
+                <label for="search"></label><input type="text" id="search" class="searchbtn" placeholder="search" oninput="searchUser()" />
+                <table border="1" cellspacing="0" cellpadding="10" id="tableContent" class="table">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Action</th>
+                    </tr>
+                </table>
+                <ul id="pagination"></ul>
+            </div>
+
 
             <!-- enddd -->
         </main>
@@ -95,6 +162,7 @@
     <!-- Scripts -->
     <!-- Custom JS -->
     <script src="../Agent/js/sidebar.js"></script>
+    <script src="../Agent/js/product.js"></script>
 </body>
 
 </html>
